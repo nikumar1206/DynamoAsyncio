@@ -1,0 +1,51 @@
+[project]
+name = "DynamoAsyncio"
+dynamic = ["version"]
+requires-python = ">=3.10"
+authors = [{ name = "Nikhil Kumar", email = "nikumar1206@gmail.com" }]
+maintainers = [{ name = "Nikhil Kumar", email = "nikumar1206@gmail.com" }]
+description = "PynamoDB, but async."
+readme = "README.md"
+# license = { file = "LICENSE.txt" }
+keywords = [
+    "dynamodb",
+    "boto3",
+    "boto",
+    "botocore",
+    "DynamoDB",
+    "asyncio",
+    "async",
+    "pynamodb",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.urls]
+Homepage = "https://example.com"
+Documentation = "https://readthedocs.org"
+Repository = "https://github.com/nikumar1206/DynamoAsyncio.git"
+"Bug Tracker" = "https://github.com/nikumar1206/DynamoAsyncio/issues"
+Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
+
+[project.gui-scripts]
+spam-gui = "spam:main_gui"
+
+[project.entry-points."spam.magical"]
+tomatoes = "spam:main_tomatoes"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
